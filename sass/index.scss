@@ -12,7 +12,7 @@ $BackgroundColor: #e5e5e5;
 body {
   width: 100vw;
   height: auto;
-  margin: 0 auto;/*modified*/
+  margin: 0 auto; /*modified*/
   padding: 0;
   box-sizing: border-box;
   font-family: $font-family;
@@ -34,6 +34,7 @@ span {
   font-size: 60px;
   position: relative;
   bottom: 5px;
+  right: 20px;
 }
 .first-title {
   color: #fff;
@@ -49,7 +50,7 @@ span {
 .second-title {
   color: #89c64a;
   position: absolute;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 80px;
   font-size: 70px;
 }
