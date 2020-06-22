@@ -37,6 +37,7 @@ span {
   font-family: "Montserrat", sans-serif;
   margin: auto 0;
   font-size: 24px;
+  display: inline-block;
 }
 
 .second-title {
@@ -273,7 +274,10 @@ span {
   flex-direction: row;
 }
 
-#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle .latest_news_maintitle1 {
+#section_latest_news
+  .latest_news_titlebandle
+  .latest_news_maintitlebandle
+  .latest_news_maintitle1 {
   color: #000;
   font-size: 65px;
   line-height: 79px;
@@ -281,7 +285,10 @@ span {
   margin: 0;
 }
 
-#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle .latest_news_maintitle2 {
+#section_latest_news
+  .latest_news_titlebandle
+  .latest_news_maintitlebandle
+  .latest_news_maintitle2 {
   color: #89c64a;
   font-weight: bold;
   font-size: 70px;
@@ -307,11 +314,17 @@ span {
   margin: 20px;
 }
 
-#section_latest_news .latest_news_contentsbandle .latest_news_content .content_img {
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content_img {
   position: relative;
 }
 
-#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box {
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content-box {
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
@@ -324,15 +337,26 @@ span {
   height: 50px;
 }
 
-#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box .content-box_date {
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content-box
+  .content-box_date {
   margin: 0;
 }
 
-#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box .content-box_month {
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content-box
+  .content-box_month {
   margin: 0;
 }
 
-#section_latest_news .latest_news_contentsbandle .latest_news_content .content_article {
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content_article {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -341,7 +365,11 @@ span {
   padding: 10px;
 }
 
-#section_latest_news .latest_news_contentsbandle .latest_news_content .content_article .greendott {
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content_article
+  .greendott {
   color: #89c64a;
   font-weight: 100;
 }
