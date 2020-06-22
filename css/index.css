@@ -136,7 +136,7 @@ body {
   background: url(../images/training.png);
 }
 
-/* ===== SHINYA=========*/
+/* ========== SHINYA ========== */
 
 header {
   width: 100%;
@@ -150,6 +150,19 @@ header {
   text-align: center;
 }
 
+#hamburger-bar {
+  /* background-color: #89c64a; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
 /* ########################## */
 
 /* ########## menu ########## */
@@ -160,12 +173,13 @@ header {
 
 #sidebarMenu {
   width: 20vw;
+  height: 100vh;
   position: fixed;
   top: 80px;
-  left: 10px;
   transform: translateX(-1000px);
   transition: transform 250ms ease-in-out;
   background-color: black;
+  z-index: 100;
 }
 
 .sidebarMenuInner {
@@ -216,6 +230,20 @@ header {
   pointer-events: auto !important;
 } */
 
+#offradio-1 {
+  display: none;
+}
+
+.downbtn {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
+}
+
+.fas:hover {
+  color: #89c64a;
+}
+
 #submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
   display: none;
 }
@@ -241,8 +269,6 @@ input[type="checkbox"] {
   box-sizing: border-box;
   cursor: pointer;
   float: left;
-  margin-left: 50px;
-  margin-top: 30px;
   z-index: 1;
   height: 100vw;
   width: 100vw;
@@ -282,20 +308,20 @@ input[type="checkbox"] {
   margin-top: 3px;
 }
 
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .horizontal {
   transition: all 0.3s;
   box-sizing: border-box;
   opacity: 0;
 }
 
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal.part-1 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(135deg);
   margin-top: 8px;
 }
 
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal.part-2 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(-135deg);
@@ -391,6 +417,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   max-height: 800px;
   background-color: white;
   align-items: center;
+  overflow: hidden;
 }
 
 .about-grid {
@@ -484,6 +511,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5vh 5vw;
+  overflow: hidden;
 }
 
 #section_latest_news .latest_news_titlebandle {
@@ -655,6 +683,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin: 0 auto;
   background-color: #000;
   flex-direction: column;
+  overflow: hidden;
 }
 
 span {
@@ -804,7 +833,7 @@ span {
 /*========*/
 /* FOOTER */
 /*========*/
-.footer {
+/* .footer {
   background: url(/images/footerbackground.png);
   display: flex;
   flex-direction: row;
@@ -813,7 +842,6 @@ span {
   background-color: black;
 }
 .footer-socialMedia {
-  /* float: left; */
   width: 75%;
 }
 .footer-socialMedia ul {
@@ -837,11 +865,11 @@ footer p {
   font-weight: bold;
   font-size: 15px;
   line-height: 19px;
-}
+} */
 /* .footer-subscribe { */
   /* float: right; */
 /* } */
-.subscribe-title {
+/* .subscribe-title {
   display: flex;
   height: 100px;
 }
@@ -873,4 +901,6 @@ bottom: 0px;
   background-color: black;
   color: white;
   text-align: center;
-}
+} */
+
+
