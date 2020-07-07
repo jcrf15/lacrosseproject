@@ -334,6 +334,11 @@
   background-color: #fff;
 }
 
+.staff .staff-cards .staff-container .cards .img-staff {
+  width: 350px;
+  height: 386px;
+}
+
 .staff .staff-cards .staff-container .cards .link-socialMedia {
   display: -webkit-box;
   display: -ms-flexbox;

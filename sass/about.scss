@@ -283,8 +283,12 @@ $BackgroundColor: #e5e5e5;
         width: 350px;
         height: 680px;
         margin: 20px;
-
         background-color: $whiteColor;
+
+        .img-staff {
+          width: 350px;
+          height: 386px;
+        }
 
         .link-socialMedia {
           display: flex;
